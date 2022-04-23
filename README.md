@@ -1,4 +1,4 @@
-# Captcha
+# GravityBot Captcha
 
 A simple npm package that will generate a random number in a captcha image for you!
 
