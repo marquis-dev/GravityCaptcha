@@ -19,3 +19,31 @@ A simple npm package that will generate a random number in a captcha image for y
 ```npm
 npm install @gravitybot/captcha
 ```
+
+## Example usage
+
+### Without number
+```js
+const { Captcha } = require('@gravitybot/captcha');
+
+(async () => {
+
+    const captcha = await new Captcha().create();
+
+    console.log(captcha); // This should return a random number
+
+})();
+```
+
+### With number
+```js
+const { Captcha } = require('@gravitybot/captcha');
+
+(async () => {
+
+    const captcha = await new Captcha().create(1976);
+
+    console.log(captcha); // This should return the entred number '1976'
+
+})();
+```
